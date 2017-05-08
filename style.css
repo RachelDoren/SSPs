@@ -4,7 +4,7 @@ body{
   width: 100%;
   }
 p {
-  font-family:"PT Sans";
+  font-family:"PT Sans", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
@@ -66,8 +66,7 @@ h4 {
   width: 100%;
   background: url('img/blue.png');
   z-index: 1;
-  font-family:"PT Sans";
-  height: 80px;
+  font-family:"PT Sans", sans-serif;
   position: fixed;
   margin-top: 0px;
   }
@@ -90,7 +89,6 @@ h4 {
   }
 #logo img{
   height: 60px;
-  margin-left: 30px;
   }
 #slide3 img{
   width: 80%;
@@ -117,7 +115,7 @@ h4 {
   opacity:0.6;
   font-size: 16px;
   text-decoration: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   }
 #nav li a.active{ color: #ffffff;
   opacity:1;
@@ -144,7 +142,7 @@ h4 {
 #slide1, #slide2{
   width: 100%; }
 #slide4 .content{
-  font-family:"PT Sans";
+  font-family:"PT Sans", sans-serif;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
@@ -176,7 +174,7 @@ h4 {
 #slide4{
   background-color: #fff;
   color: #333333;
-  height: 310px;
+  height: 350px;
   padding: 200px 0;
   }
 #slide5{
@@ -189,7 +187,7 @@ h4 {
   }
 #copyright {
   color: #fff;
-  font-family:"PT Sans";
+  font-family:"PT Sans", sans-serif;
   font-size: 12px;
   margin-top: 125px;
   text-align: center; }
@@ -197,7 +195,7 @@ h4 {
 #copyright a {
   text-decoration: none;
   text-align: center;
-  font-family:"PT Sans";
+  font-family:"PT Sans", sans-serif;
   color: #fff; }
 
 input#show, input#hide {
@@ -221,4 +219,22 @@ input#hide:checked ~ span#content {
 span {
   font-size: 18px;
   color: black;
+}
+
+/* MEDIA QUERIES */
+ @media screen and (max-width: 750px) {
+    #header {
+      height: 185px;
+    }
+    #logo img{
+      margin-top: 50px;
+      height: 75px;
+    }
+    #nav ul{
+    text-align: center;
+    float: left;
+    }
+	 #slide4 {
+    height: 800px;
+}
 }
